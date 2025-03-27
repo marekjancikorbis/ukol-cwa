@@ -1,0 +1,263 @@
+html{
+  height: 2000px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #2d2d34;
+  --second-bg-color: #25252c;
+  --text-color: white;
+  --bleau: rgba(0, 87, 255, 0.92);
+}
+
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  height: 80%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4rem 27% 4rem;
+  background: rgba(0, 0, 0, 0);
+  z-index: 5;
+}
+
+.logo {
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+.logo span {
+  text-shadow: 0 0 25px var(--bleau);
+}
+
+.active {
+  text-shadow: 0 0 45px var(--bleau);
+}
+
+.navbar a{
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: var(--bleau);
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--bleau);
+  display: none;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 12% 10rem;
+}
+
+.home {
+  transform: translateY(-50px);
+  gap: 30rem;
+}
+
+.home-content {
+  align-items: baseline;
+  text-align: left;
+  margin-top: 3rem;
+}
+
+span {
+  color: var(--bleau);
+  text-shadow: 0 0 25px var(--bleau);
+}
+
+.logo span {
+  color: var(--bleau);
+}
+
+.home-content h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  line-height: 1;
+}
+
+.home-img {
+  border-radius: 50%;
+}
+
+.home-img img {
+  position: relative;
+  top: 3rem;
+  width: 32vw;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 25px var(--bleau);
+}
+
+.home-img img:hover {
+  box-shadow: 0 0 25px var(--bleau),
+  0 0 50px var(--bleau),
+  0 0 100px var(--bleau);
+}
+
+.home-content p {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.8;
+  max-width: 1000px;
+  margin: 30px;
+}
+
+
+button {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid var(--bleau);
+  border-radius: 1.3em;
+  box-sizing: border-box;
+  color: var(--bleau);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+button:disabled {
+  pointer-events: none;
+}
+
+button:hover {
+  color: #fff;
+  background-color: var(--bleau);
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px var(--bleau);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.rectangle{
+  position: relative;
+  width: 500px;
+  height: 900px;
+  border-radius: 85px;
+  background-color: var(--second-bg-color);
+  top: -560px;
+  left: 1300px;
+  transform: rotate(-45deg);
+  z-index: -5;
+}
+.rectangle2{
+  background-color: #3c3c43;
+  position: relative;
+  width: 500px;
+  height: 900px;
+  border-radius: 85px;
+  top: -1385px;
+  left: 1290px;
+  transform: rotate(-45deg);
+  z-index: -6;
+}
+
+
+.levrone{
+  position: relative;
+  top: +220px;
+  left: -100px;
+}
+.body2{
+  position: relative;
+  width: 100%;
+  height: 1080px;
+  top: -1800px;
+  background-color: #232323;
+}
+
+.abt{
+  font-size: 90px;
+  font-weight: bold;
+  transform: translateY(-200px);
+}
+p1{
+  transform: translateY(-160px);
+  font-size: 25px;
+  max-width: 800px;
+  line-height: 1.6;
+}
+.srv{
+  transform: translateY(50px);
+}
+.skrrr{
+  font-size: 25px;
+  transform: translateY(50px);
+  line-height: 1.6;
+}
+
+
